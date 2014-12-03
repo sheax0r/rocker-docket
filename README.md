@@ -13,8 +13,8 @@ gem install rocker-docket
 ```
 
 Then you can either:
-1. Build the image yourself: ```rocker-docket build```
-2. Or pull it from the docker registry: ```rocker-docket pull```
+  * Build the image yourself: ```rocker-docket build``` or...
+  * Pull it from the docker registry: ```rocker-docket pull```
 
 # Usage
 Use it just like you would use the rkt CLI, after you have built or pulled. For help, run:
