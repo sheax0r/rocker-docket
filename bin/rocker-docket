@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+case ARGV[0]
+when 'build'
+  Dir.chdir File.join(File.dirname(__FILE__), '..') 
+  exec "docker build -t sheax0r/rocker-docket ."
+when 'pull'
+  exec "docker pull sheax0r/rocker-docket"
+else
+  puts "Usage: rocker-docket [build|pull]"
+  exit 1
+end
+
