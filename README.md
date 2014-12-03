@@ -7,20 +7,14 @@ You do, however, have to have docker installed.
 
 # Installation
 
-## Install the gem
+Install the gem:
 ```bash
 gem install rocker-docket
 ```
 
-## Build the rocker-docket image to run rkt:
-```
-rocker-docket build
-```
-
-## Pull the rocker-docket image from the registry:
-```bash
-rocker-docket pull
-```
+Then you can either:
+1. Build the image yourself: ```rocker-docket build```
+2. Or pull it from the docker registry: ```rocker-docket pull```
 
 # Usage
 Use it just like you would use the rkt CLI, after you have built or pulled. For help, run:
