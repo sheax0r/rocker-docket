@@ -1,15 +1,29 @@
 # Rocker-Docket
 Run Rocket under Docker.
+This gives you access to the rkt executable without having to install rkt on your system.
+You do, however, have to have docker installed.
 
-# Usage
-Basic usage:
+# Installation
+
+## Install the gem
 ```bash
-docker pull sheax0r/rocker-docket
-docker run rocker-docket help 
+gem install rocker-docket
 ```
 
-This really isn't very useful unless you mount some host volumes (or data containers or what-have-you)
-to store your rocket ACIs on; otherwise they will just disappear when the container stops.
+## Build the rocker-docket image to run rkt:
+```
+rocker-docket build
+```
 
-I'll include some scripts to help with this in the near future.
+## Pull the rocker-docket image from the registry:
+```bash
+rocker-docket pull
+```
 
+# Usage
+Use it just like you would use the rkt CLI, after you have built or pulled. For help, run:
+```bash
+rkt help
+```
+By default, the host directory /var/lib/rkt will be mounted in the container, for rkt 
+operations. You can override this by setting ```ROCKET_DIR```. 
