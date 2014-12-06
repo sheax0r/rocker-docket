@@ -12,12 +12,15 @@ Install the gem:
 gem install rocker-docket
 ```
 
-Then you can either:
-  * Build the image yourself: ```rocker-docket build``` or...
-  * Pull it from the docker registry: ```rocker-docket pull```
+Once installed, you can:
+  * Build the image : ```rocker-docket build``` 
+  * Update to the latest version of rocket: ```rocker-docket update```.
+
+Updating will also build. If you have never run build before, it will get the 
+latest version of rocket.
 
 # Usage
-Use it just like you would use the rkt CLI, after you have built or pulled. For help, run:
+Use it just like you would use the rkt CLI, after you have built the image. 
 ```bash
 rkt help
 ```

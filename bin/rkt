@@ -6,4 +6,4 @@ end
 
 fail "#{rocket_dir} does not exist" unless File.exists? rocket_dir
 
-exec "docker run -v #{rocket_dir}:/var/lib/rkt -t sheax0r/rocker-docket #{ARGV.join(' ')}"
+exec "docker run -v #{rocket_dir}:/var/lib/rkt -t rocker-docket #{ARGV.join(' ')}"

@@ -1,0 +1,6 @@
+FROM centos
+RUN yum install -y tar
+RUN curl -L <%=rocket_url%> | tar xz
+RUN ln -s /rocket-v0.1.0 /rocket
+WORKDIR /rocket
+ENTRYPOINT ["./rkt"]
